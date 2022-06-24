@@ -1,0 +1,181 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-image: url(../img/encabezado.jpg);
+	background-repeat: no-repeat;
+	background-size: 120% 100%;
+	height: 100vh;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+header h2{
+	font-size: 4.5em;
+	color: #000;
+	display:inline-block;
+	vertical-align:	middle;
+	padding-bottom: 17px;
+	cursor: pointer;
+}
+header h2:hover{
+	border-bottom: 4px solid #000;
+}
+
+header .containerHeader:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.containerHeader{
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 1em;
+	overflow: hidden;
+}
+main {
+	display: flex;
+    align-content: center;
+	flex-wrap: wrap;
+    align-items: center;
+}
+.container{
+	width: 54%;
+	
+}
+.normalidad{
+	width: 40%;
+}
+
+.imcS{
+	background-color: #044c2e;
+	color: #fff;
+}
+.container2{
+	margin-top: 0em;
+	width: 100%;
+}
+.container h2 {
+	text-align: center;
+}
+.normal {
+	background-color: #46c590;
+}
+.sobrepeso{
+	background-color: #c5c346;
+}
+.obesidad1{
+	background-color: #f09c2f;
+}
+.obesidad2{
+	background-color: #f0662f;
+}
+.obesidad3{
+	background-color: #ff2f2f;
+}
+
+section h2{
+	font-size: 3em;
+	margin-bottom: .4em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .5em 1em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#d30c37;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+	border-radius: 5px;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: none;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+.paciente-incorrecto{
+	background-color: lightcoral;
+}

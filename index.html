@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Buona Vita Nutrición</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="containerHeader">
+				<a href="#pacientes"><h2 class="titulo">Buona Vita Nutrición</h2></a>
+			</div>
+		</header>
+		<main>
+			<section class="container" id="pacientes">
+				<h2>Mis pacientes</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Peso(kg)</th>
+							<th>Altura(m)</th>
+							<th>IMC</th>
+						</tr>
+					</thead>
+					<tbody id="tabla-pacientes">
+						<tr class="paciente" id="primer-paciente">
+							<td class="info-nombre">Pablo</td>
+							<td class="info-peso">100</td>
+							<td class="info-altura">2.00</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nombre">Juan</td>
+							<td class="info-peso">80</td>
+							<td class="info-altura">1.72</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nombre">Erica</td>
+							<td class="info-peso">60</td>
+							<td class="info-altura">1.64</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente">
+							<td class="info-nombre">Diego</td>
+							<td class="info-peso">85</td>
+							<td class="info-altura">1.73</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<tr class="paciente" >
+							<td class="info-nombre">Tatiana</td>
+							<td class="info-peso">46</td>
+							<td class="info-altura">1.55</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<tr class="paciente">
+							<td class="info-nombre">Fabiana</td>
+							<td class="info-peso">50</td>
+							<td class="info-altura">1.60</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<tr class="paciente">
+							<td class="info-nombre">Renata</td>
+							<td class="info-peso">74</td>
+							<td class="info-altura">1.68</td>
+							<td class="info-imc">0</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section class="normalidad">
+				<table>
+					<thead>
+						<tr>
+							<th class="imcS">Clasificación</th>
+							<th class="imcS">IMC</th>
+							<th class="imcS">Riesgo</th>
+						</tr>
+					</thead>
+					<tbody id="tabla-imc">
+						<tr class="imc" id="normal">
+							<td class="normal">Normal</td>
+							<td class="normal-kg">18.5 - 24.9</td>
+							<td class="normal-riesgo">Promedio</td>
+						</tr>
+
+						<tr class="imc">
+							<td class="sobrepeso">Sobrepeso</td>
+							<td class="normal-kg">25 - 29.9</td>
+							<td class="normal-riesgo">Aumentado</td>
+						</tr>
+
+						<tr class="imc">
+							<td class="obesidad1">Obesidad Grado I</td>
+							<td class="normal-kg">30 - 34.9</td>
+							<td class="normal-riesgo">Moderado</td>
+						</tr>
+						<tr class="imc" >
+							<td class="obesidad2">Obesidad Grado II</td>
+							<td class="normal-kg">35 - 39.9</td>
+							<td class="normal-riesgo">Severo</td>
+						</tr>
+						<tr class="imc" >
+							<td class="obesidad3">Obesidad Grado III</td>
+							<td class="normal-kg">Más de 40</td>
+							<td class="normal-riesgo">Muy Severo</td>
+						</tr>
+					</tbody>
+			</section>
+		</main>
+		<section class="container2">
+            <h2 id="titulo-form">Adicionar nuevo paciente</h2>
+            <form id="form-adicionar">
+                <div class="grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="digite el nombre del paciente" class="nombreV campo">
+                </div>
+                <div class="grupo">
+                    <label for="peso">Peso:</label>
+                    <input id="peso" name="peso" type="text" placeholder="digite el peso del paciente" class="campo campo-medio pesoV">
+                </div>
+                <div class="grupo">
+                    <label for="altura">Altura:</label>
+                    <input id="altura" name="altura" type="text" placeholder="digite la altura del paciente" class="campo campo-medio alturaV">
+                </div>
+                <button id="adicionar-paciente" class="boton bto-principal">Adicionar</button>
+            </form>
+        </section>
+		<script src="js/calcular-imc.js"></script>
+		<script src="js/form.js"></script>
+	</body>
+</html>
