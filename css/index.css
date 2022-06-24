@@ -179,3 +179,6 @@ button[disabled=disabled], button:disabled {
 .paciente-incorrecto{
 	background-color: lightcoral;
 }
+input [type="text"]{
+	font-size: 15px;
+}
