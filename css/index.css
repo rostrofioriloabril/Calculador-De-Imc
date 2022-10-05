@@ -7,6 +7,32 @@ body{
 	font-size: 14px;
 }
 
+/*tabla*/
+.fadeOut{
+	opacity: 0;
+	transition: 0.3s;
+}
+#filtrar-tabla{
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+.invisible{
+	display: none;
+}
+.campo-invalido{
+	border: 1px solid red;
+}
+.paciente-incorrecto{
+	background-color: lightcoral;
+}
+#mensajes-errores{
+	color: #f00;
+}
+
+
+
+
 header{
 	background-image: url(../img/encabezado.jpg);
 	background-repeat: no-repeat;
@@ -47,7 +73,7 @@ header .containerHeader:before{
 }
 
 section{
-	margin: 2em 1em;
+	margin: 2em 1em 1em;
 	overflow: hidden;
 }
 main {
