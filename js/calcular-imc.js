@@ -31,7 +31,7 @@ for(var i = 0; i< pacientes.length;i++){
     }
 }
 
-const calcularIMC = (peso,altura) =>{
+function calcularIMC(peso,altura){
     var imc = peso / (altura * altura);
     return imc.toFixed(2);
 }
@@ -43,7 +43,7 @@ function validarPeso(peso){
         return false;
     }
 }
-const validarAltura = (altura) => {
+function validarAltura(altura){
     if(altura >=0 && altura <=2.51){
         return true;
     }
